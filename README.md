@@ -1,5 +1,7 @@
 # posts-api-ios
 
+Seu desafio será desenvovler um app que liste posts de usuários e que detalhe os comentários do post selecionados. 
+
 ## OBJETIVOS
 Exibir listagem de posts de usuários consumindo a API "https://jsonplaceholder.typicode.com/posts".
 Exibir detalhes de comentários do post selecionado pelo usuário.<br/>
