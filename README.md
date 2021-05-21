@@ -1,8 +1,6 @@
 # posts-api-ios
 
 ## OBJETIVOS
-
-## PRIMÁRIO:
 Exibir listagem de posts de usuários consumindo a API "https://jsonplaceholder.typicode.com/posts".
 Exibir detalhes de comentários do post selecionado pelo usuário.<br/>
 Caminho da api para comentários: "https://jsonplaceholder.typicode.com/posts/{post_id}/comments"
