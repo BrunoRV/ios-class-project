@@ -4,15 +4,8 @@
 
 ## PRIMÁRIO:
 Exibir listagem de posts de usuários consumindo a API "https://jsonplaceholder.typicode.com/posts".
-
-## SECUNDÁRIO:
 Exibir detalhes de comentários do post selecionado pelo usuário.<br/>
 Caminho da api para comentários: "https://jsonplaceholder.typicode.com/posts/{post_id}/comments"
-
-## ATENÇÃO:
-1. Para realização do teste, crie um fork do mesmo.<br/>
-2. Após finalizar seu teste, dê um feedback para que possa ser criada <b>uma branch exclusiva</b> para sua avaliação.<br/>
-3. Crie um pull request para a branch exclusiva.
 
 ## OBRIGATORIEDADES:
 Boas práticas com padrões em desenvolvimento de software.<br/>
