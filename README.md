@@ -11,7 +11,6 @@ Conhecimento em consumo de APIs (REST) - Alamofire (preferencial) ou semelhante.
 Arquitetura - MVP (preferencial) ou semelhante.<br/>
 Utilizar Swift language.<br/>
 Utilizar Cocoapods.<br/>
-Domínio em técnicas do Google Material Design/Components.<br/>
 Seguir como exemplos de UI e conteúdo no diretório /class project.<br/>
 <br/><br/>
 <p align="left">
