@@ -11,7 +11,7 @@ import SwiftUI
 struct RogaLabsTechCaseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostView()
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  Post.swift
+//  PostModel.swift
 //  RogaLabsTechCase
 //
 //  Created by Bruno Ribeiro on 26/05/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PostModel {
+struct PostModel: Identifiable {
     var userId: Int
     var id: Int
     var title: String

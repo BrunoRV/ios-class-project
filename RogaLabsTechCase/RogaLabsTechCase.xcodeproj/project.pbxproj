@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		214CD0968E360F4BC6E62968 /* Pods_RogaLabsTechCaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FC6F750C9A7CA0301FA5B7 /* Pods_RogaLabsTechCaseTests.framework */; };
 		7215B0FA265F13C5002025F1 /* RogaLabsTechCaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B0F9265F13C5002025F1 /* RogaLabsTechCaseApp.swift */; };
-		7215B0FC265F13C5002025F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B0FB265F13C5002025F1 /* ContentView.swift */; };
 		7215B0FE265F13C9002025F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215B0FD265F13C9002025F1 /* Assets.xcassets */; };
 		7215B101265F13C9002025F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215B100265F13C9002025F1 /* Preview Assets.xcassets */; };
 		7215B10C265F13C9002025F1 /* RogaLabsTechCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B10B265F13C9002025F1 /* RogaLabsTechCaseTests.swift */; };
@@ -19,10 +18,12 @@
 		7215B131265F201A002025F1 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B130265F201A002025F1 /* PostModel.swift */; };
 		7215B133265F215C002025F1 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B132265F215B002025F1 /* PostRepository.swift */; };
 		72167354265F2616001653EA /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167353265F2616001653EA /* CommentRepository.swift */; };
-		72167356265F2907001653EA /* CommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167355265F2907001653EA /* CommentPresenter.swift */; };
-		72167358265F2916001653EA /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167357265F2916001653EA /* CommentController.swift */; };
-		7216735A265F2920001653EA /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167359265F2920001653EA /* PostPresenter.swift */; };
-		7216735C265F292B001653EA /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216735B265F292B001653EA /* PostController.swift */; };
+		72167356265F2907001653EA /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167355265F2907001653EA /* CommentView.swift */; };
+		72167358265F2916001653EA /* CommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167357265F2916001653EA /* CommentPresenter.swift */; };
+		7216735A265F2920001653EA /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167359265F2920001653EA /* PostView.swift */; };
+		7216735C265F292B001653EA /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216735B265F292B001653EA /* PostPresenter.swift */; };
+		7216735E265FAD49001653EA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216735D265FAD49001653EA /* CommentCell.swift */; };
+		72167360265FAD5A001653EA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216735F265FAD5A001653EA /* PostCell.swift */; };
 		CF0CCBEB7093EA96F8DF0629 /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340F2E5E9107EA484331E9DF /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework */; };
 		DBCFC9C6CF40A6E23600ED8C /* Pods_RogaLabsTechCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F6F590777E3034BF2E80D2 /* Pods_RogaLabsTechCase.framework */; };
 /* End PBXBuildFile section */
@@ -50,7 +51,6 @@
 		4164ABB0679C400DBE9E20D9 /* Pods-RogaLabsTechCaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCaseTests.release.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCaseTests/Pods-RogaLabsTechCaseTests.release.xcconfig"; sourceTree = "<group>"; };
 		7215B0F6265F13C5002025F1 /* RogaLabsTechCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RogaLabsTechCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7215B0F9265F13C5002025F1 /* RogaLabsTechCaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogaLabsTechCaseApp.swift; sourceTree = "<group>"; };
-		7215B0FB265F13C5002025F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7215B0FD265F13C9002025F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7215B100265F13C9002025F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7215B102265F13C9002025F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,10 +65,12 @@
 		7215B130265F201A002025F1 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		7215B132265F215B002025F1 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
 		72167353265F2616001653EA /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
-		72167355265F2907001653EA /* CommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentPresenter.swift; sourceTree = "<group>"; };
-		72167357265F2916001653EA /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
-		72167359265F2920001653EA /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
-		7216735B265F292B001653EA /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		72167355265F2907001653EA /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		72167357265F2916001653EA /* CommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentPresenter.swift; sourceTree = "<group>"; };
+		72167359265F2920001653EA /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		7216735B265F292B001653EA /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		7216735D265FAD49001653EA /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		7216735F265FAD5A001653EA /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		794F1E0ABB884F8F13F217F7 /* Pods-RogaLabsTechCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCase.release.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCase/Pods-RogaLabsTechCase.release.xcconfig"; sourceTree = "<group>"; };
 		8491DFB42B3C2E1D5F61FA68 /* Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3FC6F750C9A7CA0301FA5B7 /* Pods_RogaLabsTechCaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RogaLabsTechCaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,7 +187,6 @@
 			children = (
 				7215B12D265F1E91002025F1 /* Comments */,
 				7215B12C265F1E83002025F1 /* Posts */,
-				7215B0FB265F13C5002025F1 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,8 +203,9 @@
 		7215B12C265F1E83002025F1 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				72167359265F2920001653EA /* PostPresenter.swift */,
-				7216735B265F292B001653EA /* PostController.swift */,
+				72167359265F2920001653EA /* PostView.swift */,
+				7216735B265F292B001653EA /* PostPresenter.swift */,
+				7216735F265FAD5A001653EA /* PostCell.swift */,
 			);
 			path = Posts;
 			sourceTree = "<group>";
@@ -211,8 +213,9 @@
 		7215B12D265F1E91002025F1 /* Comments */ = {
 			isa = PBXGroup;
 			children = (
-				72167355265F2907001653EA /* CommentPresenter.swift */,
-				72167357265F2916001653EA /* CommentController.swift */,
+				72167355265F2907001653EA /* CommentView.swift */,
+				72167357265F2916001653EA /* CommentPresenter.swift */,
+				7216735D265FAD49001653EA /* CommentCell.swift */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -483,14 +486,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7215B0FC265F13C5002025F1 /* ContentView.swift in Sources */,
-				72167358265F2916001653EA /* CommentController.swift in Sources */,
-				7216735A265F2920001653EA /* PostPresenter.swift in Sources */,
+				72167358265F2916001653EA /* CommentPresenter.swift in Sources */,
+				7216735A265F2920001653EA /* PostView.swift in Sources */,
 				7215B133265F215C002025F1 /* PostRepository.swift in Sources */,
 				7215B12F265F1F36002025F1 /* CommentModel.swift in Sources */,
-				7216735C265F292B001653EA /* PostController.swift in Sources */,
+				7216735C265F292B001653EA /* PostPresenter.swift in Sources */,
+				7216735E265FAD49001653EA /* CommentCell.swift in Sources */,
 				7215B0FA265F13C5002025F1 /* RogaLabsTechCaseApp.swift in Sources */,
-				72167356265F2907001653EA /* CommentPresenter.swift in Sources */,
+				72167356265F2907001653EA /* CommentView.swift in Sources */,
+				72167360265FAD5A001653EA /* PostCell.swift in Sources */,
 				7215B131265F201A002025F1 /* PostModel.swift in Sources */,
 				72167354265F2616001653EA /* CommentRepository.swift in Sources */,
 			);

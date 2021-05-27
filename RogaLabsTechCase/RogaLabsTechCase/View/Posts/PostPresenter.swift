@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class PostPresenter {
+    var repository: PostRepository
+
+    init(repository postRepository: PostRepository) {
+        repository = postRepository
+    }
+}
