@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		214CD0968E360F4BC6E62968 /* Pods_RogaLabsTechCaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FC6F750C9A7CA0301FA5B7 /* Pods_RogaLabsTechCaseTests.framework */; };
+		7215B0FA265F13C5002025F1 /* RogaLabsTechCaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B0F9265F13C5002025F1 /* RogaLabsTechCaseApp.swift */; };
+		7215B0FC265F13C5002025F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B0FB265F13C5002025F1 /* ContentView.swift */; };
+		7215B0FE265F13C9002025F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215B0FD265F13C9002025F1 /* Assets.xcassets */; };
+		7215B101265F13C9002025F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7215B100265F13C9002025F1 /* Preview Assets.xcassets */; };
+		7215B10C265F13C9002025F1 /* RogaLabsTechCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B10B265F13C9002025F1 /* RogaLabsTechCaseTests.swift */; };
+		7215B117265F13C9002025F1 /* RogaLabsTechCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B116265F13C9002025F1 /* RogaLabsTechCaseUITests.swift */; };
+		7215B129265F1D20002025F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7215B128265F1D20002025F1 /* README.md */; };
+		7215B12F265F1F36002025F1 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B12E265F1F36002025F1 /* CommentModel.swift */; };
+		7215B131265F201A002025F1 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B130265F201A002025F1 /* PostModel.swift */; };
+		7215B133265F215C002025F1 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215B132265F215B002025F1 /* PostRepository.swift */; };
+		72167354265F2616001653EA /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167353265F2616001653EA /* CommentRepository.swift */; };
+		72167356265F2907001653EA /* CommentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167355265F2907001653EA /* CommentPresenter.swift */; };
+		72167358265F2916001653EA /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167357265F2916001653EA /* CommentController.swift */; };
+		7216735A265F2920001653EA /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72167359265F2920001653EA /* PostPresenter.swift */; };
+		7216735C265F292B001653EA /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216735B265F292B001653EA /* PostController.swift */; };
+		CF0CCBEB7093EA96F8DF0629 /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340F2E5E9107EA484331E9DF /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework */; };
+		DBCFC9C6CF40A6E23600ED8C /* Pods_RogaLabsTechCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F6F590777E3034BF2E80D2 /* Pods_RogaLabsTechCase.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7215B108265F13C9002025F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7215B0EE265F13C5002025F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7215B0F5265F13C5002025F1;
+			remoteInfo = RogaLabsTechCase;
+		};
+		7215B113265F13C9002025F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7215B0EE265F13C5002025F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7215B0F5265F13C5002025F1;
+			remoteInfo = RogaLabsTechCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03BE2BF3618958B9FD272191 /* Pods-RogaLabsTechCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCase.debug.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCase/Pods-RogaLabsTechCase.debug.xcconfig"; sourceTree = "<group>"; };
+		340F2E5E9107EA484331E9DF /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4164ABB0679C400DBE9E20D9 /* Pods-RogaLabsTechCaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCaseTests.release.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCaseTests/Pods-RogaLabsTechCaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		7215B0F6265F13C5002025F1 /* RogaLabsTechCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RogaLabsTechCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7215B0F9265F13C5002025F1 /* RogaLabsTechCaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogaLabsTechCaseApp.swift; sourceTree = "<group>"; };
+		7215B0FB265F13C5002025F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7215B0FD265F13C9002025F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7215B100265F13C9002025F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7215B102265F13C9002025F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7215B107265F13C9002025F1 /* RogaLabsTechCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogaLabsTechCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7215B10B265F13C9002025F1 /* RogaLabsTechCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogaLabsTechCaseTests.swift; sourceTree = "<group>"; };
+		7215B10D265F13C9002025F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7215B112265F13C9002025F1 /* RogaLabsTechCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RogaLabsTechCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7215B116265F13C9002025F1 /* RogaLabsTechCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RogaLabsTechCaseUITests.swift; sourceTree = "<group>"; };
+		7215B118265F13C9002025F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7215B128265F1D20002025F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7215B12E265F1F36002025F1 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		7215B130265F201A002025F1 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		7215B132265F215B002025F1 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		72167353265F2616001653EA /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
+		72167355265F2907001653EA /* CommentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentPresenter.swift; sourceTree = "<group>"; };
+		72167357265F2916001653EA /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
+		72167359265F2920001653EA /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		7216735B265F292B001653EA /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		794F1E0ABB884F8F13F217F7 /* Pods-RogaLabsTechCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCase.release.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCase/Pods-RogaLabsTechCase.release.xcconfig"; sourceTree = "<group>"; };
+		8491DFB42B3C2E1D5F61FA68 /* Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3FC6F750C9A7CA0301FA5B7 /* Pods_RogaLabsTechCaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RogaLabsTechCaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D470F0B527050B7DF589B901 /* Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.release.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D9F6F590777E3034BF2E80D2 /* Pods_RogaLabsTechCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RogaLabsTechCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC98613F26891BAF1CCAF1E6 /* Pods-RogaLabsTechCaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCaseTests.debug.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCaseTests/Pods-RogaLabsTechCaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7215B0F3265F13C5002025F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCFC9C6CF40A6E23600ED8C /* Pods_RogaLabsTechCase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7215B104265F13C9002025F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214CD0968E360F4BC6E62968 /* Pods_RogaLabsTechCaseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7215B10F265F13C9002025F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0CCBEB7093EA96F8DF0629 /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37CE86910E9C826DD97C8D2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03BE2BF3618958B9FD272191 /* Pods-RogaLabsTechCase.debug.xcconfig */,
+				794F1E0ABB884F8F13F217F7 /* Pods-RogaLabsTechCase.release.xcconfig */,
+				8491DFB42B3C2E1D5F61FA68 /* Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig */,
+				D470F0B527050B7DF589B901 /* Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.release.xcconfig */,
+				EC98613F26891BAF1CCAF1E6 /* Pods-RogaLabsTechCaseTests.debug.xcconfig */,
+				4164ABB0679C400DBE9E20D9 /* Pods-RogaLabsTechCaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7215B0ED265F13C5002025F1 = {
+			isa = PBXGroup;
+			children = (
+				7215B128265F1D20002025F1 /* README.md */,
+				7215B0F8265F13C5002025F1 /* RogaLabsTechCase */,
+				7215B10A265F13C9002025F1 /* RogaLabsTechCaseTests */,
+				7215B115265F13C9002025F1 /* RogaLabsTechCaseUITests */,
+				7215B0F7265F13C5002025F1 /* Products */,
+				37CE86910E9C826DD97C8D2D /* Pods */,
+				797D5DEFD0F69DCF5AC3A8A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7215B0F7265F13C5002025F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7215B0F6265F13C5002025F1 /* RogaLabsTechCase.app */,
+				7215B107265F13C9002025F1 /* RogaLabsTechCaseTests.xctest */,
+				7215B112265F13C9002025F1 /* RogaLabsTechCaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7215B0F8265F13C5002025F1 /* RogaLabsTechCase */ = {
+			isa = PBXGroup;
+			children = (
+				7215B126265F1C6C002025F1 /* Data */,
+				7215B124265F1C50002025F1 /* View */,
+				7215B0F9265F13C5002025F1 /* RogaLabsTechCaseApp.swift */,
+				7215B0FD265F13C9002025F1 /* Assets.xcassets */,
+				7215B102265F13C9002025F1 /* Info.plist */,
+				7215B0FF265F13C9002025F1 /* Preview Content */,
+			);
+			path = RogaLabsTechCase;
+			sourceTree = "<group>";
+		};
+		7215B0FF265F13C9002025F1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7215B100265F13C9002025F1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7215B10A265F13C9002025F1 /* RogaLabsTechCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				7215B10B265F13C9002025F1 /* RogaLabsTechCaseTests.swift */,
+				7215B10D265F13C9002025F1 /* Info.plist */,
+			);
+			path = RogaLabsTechCaseTests;
+			sourceTree = "<group>";
+		};
+		7215B115265F13C9002025F1 /* RogaLabsTechCaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7215B116265F13C9002025F1 /* RogaLabsTechCaseUITests.swift */,
+				7215B118265F13C9002025F1 /* Info.plist */,
+			);
+			path = RogaLabsTechCaseUITests;
+			sourceTree = "<group>";
+		};
+		7215B124265F1C50002025F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7215B12D265F1E91002025F1 /* Comments */,
+				7215B12C265F1E83002025F1 /* Posts */,
+				7215B0FB265F13C5002025F1 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7215B126265F1C6C002025F1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7215B135265F21AC002025F1 /* Repository */,
+				7215B134265F21A5002025F1 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7215B12C265F1E83002025F1 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				72167359265F2920001653EA /* PostPresenter.swift */,
+				7216735B265F292B001653EA /* PostController.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		7215B12D265F1E91002025F1 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				72167355265F2907001653EA /* CommentPresenter.swift */,
+				72167357265F2916001653EA /* CommentController.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		7215B134265F21A5002025F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7215B12E265F1F36002025F1 /* CommentModel.swift */,
+				7215B130265F201A002025F1 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7215B135265F21AC002025F1 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7215B132265F215B002025F1 /* PostRepository.swift */,
+				72167353265F2616001653EA /* CommentRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		797D5DEFD0F69DCF5AC3A8A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F6F590777E3034BF2E80D2 /* Pods_RogaLabsTechCase.framework */,
+				340F2E5E9107EA484331E9DF /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework */,
+				A3FC6F750C9A7CA0301FA5B7 /* Pods_RogaLabsTechCaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7215B0F5265F13C5002025F1 /* RogaLabsTechCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7215B11B265F13C9002025F1 /* Build configuration list for PBXNativeTarget "RogaLabsTechCase" */;
+			buildPhases = (
+				66799A09F3A00390A00FB45F /* [CP] Check Pods Manifest.lock */,
+				7215B0F2265F13C5002025F1 /* Sources */,
+				7215B0F3265F13C5002025F1 /* Frameworks */,
+				7215B0F4265F13C5002025F1 /* Resources */,
+				8C13347882E1FF84C7C84C82 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RogaLabsTechCase;
+			productName = RogaLabsTechCase;
+			productReference = 7215B0F6265F13C5002025F1 /* RogaLabsTechCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7215B106265F13C9002025F1 /* RogaLabsTechCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7215B11E265F13C9002025F1 /* Build configuration list for PBXNativeTarget "RogaLabsTechCaseTests" */;
+			buildPhases = (
+				4A4171689635C19515648563 /* [CP] Check Pods Manifest.lock */,
+				7215B103265F13C9002025F1 /* Sources */,
+				7215B104265F13C9002025F1 /* Frameworks */,
+				7215B105265F13C9002025F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7215B109265F13C9002025F1 /* PBXTargetDependency */,
+			);
+			name = RogaLabsTechCaseTests;
+			productName = RogaLabsTechCaseTests;
+			productReference = 7215B107265F13C9002025F1 /* RogaLabsTechCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7215B111265F13C9002025F1 /* RogaLabsTechCaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7215B121265F13C9002025F1 /* Build configuration list for PBXNativeTarget "RogaLabsTechCaseUITests" */;
+			buildPhases = (
+				1790A5F6989B677F59DA993C /* [CP] Check Pods Manifest.lock */,
+				7215B10E265F13C9002025F1 /* Sources */,
+				7215B10F265F13C9002025F1 /* Frameworks */,
+				7215B110265F13C9002025F1 /* Resources */,
+				15D96241A3C8D36CD776FE67 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7215B114265F13C9002025F1 /* PBXTargetDependency */,
+			);
+			name = RogaLabsTechCaseUITests;
+			productName = RogaLabsTechCaseUITests;
+			productReference = 7215B112265F13C9002025F1 /* RogaLabsTechCaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7215B0EE265F13C5002025F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					7215B0F5265F13C5002025F1 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					7215B106265F13C9002025F1 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7215B0F5265F13C5002025F1;
+					};
+					7215B111265F13C9002025F1 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 7215B0F5265F13C5002025F1;
+					};
+				};
+			};
+			buildConfigurationList = 7215B0F1265F13C5002025F1 /* Build configuration list for PBXProject "RogaLabsTechCase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7215B0ED265F13C5002025F1;
+			productRefGroup = 7215B0F7265F13C5002025F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7215B0F5265F13C5002025F1 /* RogaLabsTechCase */,
+				7215B106265F13C9002025F1 /* RogaLabsTechCaseTests */,
+				7215B111265F13C9002025F1 /* RogaLabsTechCaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7215B0F4265F13C5002025F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7215B129265F1D20002025F1 /* README.md in Resources */,
+				7215B101265F13C9002025F1 /* Preview Assets.xcassets in Resources */,
+				7215B0FE265F13C9002025F1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7215B105265F13C9002025F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7215B110265F13C9002025F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15D96241A3C8D36CD776FE67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1790A5F6989B677F59DA993C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A4171689635C19515648563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RogaLabsTechCaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66799A09F3A00390A00FB45F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RogaLabsTechCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C13347882E1FF84C7C84C82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RogaLabsTechCase/Pods-RogaLabsTechCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RogaLabsTechCase/Pods-RogaLabsTechCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RogaLabsTechCase/Pods-RogaLabsTechCase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7215B0F2265F13C5002025F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7215B0FC265F13C5002025F1 /* ContentView.swift in Sources */,
+				72167358265F2916001653EA /* CommentController.swift in Sources */,
+				7216735A265F2920001653EA /* PostPresenter.swift in Sources */,
+				7215B133265F215C002025F1 /* PostRepository.swift in Sources */,
+				7215B12F265F1F36002025F1 /* CommentModel.swift in Sources */,
+				7216735C265F292B001653EA /* PostController.swift in Sources */,
+				7215B0FA265F13C5002025F1 /* RogaLabsTechCaseApp.swift in Sources */,
+				72167356265F2907001653EA /* CommentPresenter.swift in Sources */,
+				7215B131265F201A002025F1 /* PostModel.swift in Sources */,
+				72167354265F2616001653EA /* CommentRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7215B103265F13C9002025F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7215B10C265F13C9002025F1 /* RogaLabsTechCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7215B10E265F13C9002025F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7215B117265F13C9002025F1 /* RogaLabsTechCaseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7215B109265F13C9002025F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7215B0F5265F13C5002025F1 /* RogaLabsTechCase */;
+			targetProxy = 7215B108265F13C9002025F1 /* PBXContainerItemProxy */;
+		};
+		7215B114265F13C9002025F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7215B0F5265F13C5002025F1 /* RogaLabsTechCase */;
+			targetProxy = 7215B113265F13C9002025F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7215B119265F13C9002025F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7215B11A265F13C9002025F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7215B11C265F13C9002025F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03BE2BF3618958B9FD272191 /* Pods-RogaLabsTechCase.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RogaLabsTechCase/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RogaLabsTechCase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.unbounded.RogaLabsTechCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7215B11D265F13C9002025F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 794F1E0ABB884F8F13F217F7 /* Pods-RogaLabsTechCase.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RogaLabsTechCase/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RogaLabsTechCase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.unbounded.RogaLabsTechCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7215B11F265F13C9002025F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC98613F26891BAF1CCAF1E6 /* Pods-RogaLabsTechCaseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RogaLabsTechCaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.unbounded.RogaLabsTechCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogaLabsTechCase.app/RogaLabsTechCase";
+			};
+			name = Debug;
+		};
+		7215B120265F13C9002025F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4164ABB0679C400DBE9E20D9 /* Pods-RogaLabsTechCaseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RogaLabsTechCaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.unbounded.RogaLabsTechCaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RogaLabsTechCase.app/RogaLabsTechCase";
+			};
+			name = Release;
+		};
+		7215B122265F13C9002025F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8491DFB42B3C2E1D5F61FA68 /* Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RogaLabsTechCaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.unbounded.RogaLabsTechCaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RogaLabsTechCase;
+			};
+			name = Debug;
+		};
+		7215B123265F13C9002025F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D470F0B527050B7DF589B901 /* Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RogaLabsTechCaseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.unbounded.RogaLabsTechCaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RogaLabsTechCase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7215B0F1265F13C5002025F1 /* Build configuration list for PBXProject "RogaLabsTechCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7215B119265F13C9002025F1 /* Debug */,
+				7215B11A265F13C9002025F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7215B11B265F13C9002025F1 /* Build configuration list for PBXNativeTarget "RogaLabsTechCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7215B11C265F13C9002025F1 /* Debug */,
+				7215B11D265F13C9002025F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7215B11E265F13C9002025F1 /* Build configuration list for PBXNativeTarget "RogaLabsTechCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7215B11F265F13C9002025F1 /* Debug */,
+				7215B120265F13C9002025F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7215B121265F13C9002025F1 /* Build configuration list for PBXNativeTarget "RogaLabsTechCaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7215B122265F13C9002025F1 /* Debug */,
+				7215B123265F13C9002025F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7215B0EE265F13C5002025F1 /* Project object */;
+}

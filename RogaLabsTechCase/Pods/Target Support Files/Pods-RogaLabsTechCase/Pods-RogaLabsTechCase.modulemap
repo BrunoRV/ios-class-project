@@ -1,0 +1,6 @@
+framework module Pods_RogaLabsTechCase {
+  umbrella header "Pods-RogaLabsTechCase-umbrella.h"
+
+  export *
+  module * { export * }
+}

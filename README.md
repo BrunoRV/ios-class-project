@@ -22,3 +22,20 @@ Seguir como exemplos de UI e conteúdo no diretório /class project.<br/>
 <p align="left">
   <img src="class project/ui_comments_example.png?raw=true" width="350" title="Posts">
 </p>
+
+---
+
+## Minhas decisões de projeto
+
+### Pods
+Utilizando por sugestão do desafio.
+
+### Alamofire
+Utilizando por sugestão do desafio.
+
+### Arquitetura MVP
+Utilizando por sugestão do desafio.
+
+### SwiftUI
+Não possuo experiência prévia com SwiftUI, mas decidi tomar o risco de desenvolver o projeto usando esta tecnologia, utilizando para
+experimentação pessoal.
