@@ -8,9 +8,9 @@
 import Foundation
 
 class CommentPresenter {
-    private var _commentRepository: CommentRepository
-
-    init(commentRepository: CommentRepository) {
-        _commentRepository = commentRepository
-    }
+//    private var _commentRepository: CommentRepository
+//
+//    init(commentRepository: CommentRepository) {
+//        _commentRepository = commentRepository
+//    }
 }

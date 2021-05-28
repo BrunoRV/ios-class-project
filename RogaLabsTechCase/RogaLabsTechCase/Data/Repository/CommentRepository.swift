@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol CommentRepository {
+protocol CommentRepositoryProtocol {
     func fetchCommentList() -> [CommentModel]
 }
 
-class FakeCommentRepository: CommentRepository {
+class FakeCommentRepository: CommentRepositoryProtocol {
     func fetchCommentList() -> [CommentModel] {
         return (0...4).map {
             CommentModel(postId: $0,

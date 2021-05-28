@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PostCell: View {
-    private var _post: PostModel
+    private var _post: PostViewModel
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,7 +17,7 @@ struct PostCell: View {
         }
     }
 
-    init(_ post: PostModel) {
+    init(_ post: PostViewModel) {
         _post = post
     }
 }
@@ -25,7 +25,7 @@ struct PostCell: View {
 #if DEBUG
 struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
-        PostCell(PostModel(userId: 1, id: 1, title: "Placeholder Post Title", body: "Placeholder Post Body"))
+        PostCell(PostViewModel(title: "Placeholder Post Title", body: "Placeholder Post Body"))
     }
 }
 #endif

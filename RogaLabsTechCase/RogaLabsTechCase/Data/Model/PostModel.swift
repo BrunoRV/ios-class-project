@@ -7,9 +7,15 @@
 
 import Foundation
 
-struct PostModel: Identifiable {
+struct PostModel: Codable {
     var userId: Int
     var id: Int
+    var title: String
+    var body: String
+}
+
+struct PostViewModel: Identifiable {
+    var id = UUID()
     var title: String
     var body: String
 }

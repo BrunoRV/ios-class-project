@@ -11,7 +11,8 @@ import SwiftUI
 struct RogaLabsTechCaseApp: App {
     var body: some Scene {
         WindowGroup {
-            PostView()
+            let store = PostStore()
+            PostView(presenter: PostPresenter(repository: PostRepository(), delegate: store), store: store)
         }
     }
 }
