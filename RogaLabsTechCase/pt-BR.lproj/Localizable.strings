@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  RogaLabsTechCase
+
+  Created by Bruno Ribeiro on 27/05/21.
+  
+*/
+
+"comments" = "Comentários";
+"posts" = "Postagens";
+"loading" = "Carregando";
+"retry" = "Tentar novamente";
+"reload" = "Recarregar";

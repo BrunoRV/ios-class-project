@@ -21,24 +21,36 @@ struct CommentView: View {
         NavigationView {
             switch store.state {
             case .loading:
-                AnyView(Text("Loading"))
+                Text("loading")
             case .loaded(let comments):
-                AnyView(List(comments) { comment in
-                    CommentCell(comment)
-                })
+                VStack {
+                    Button("reload") {
+                        presenter.fetchComments()
+                    }
+                    List(comments) { comment in
+                        CommentCell(comment)
+                    }
+                }
             case .error(let error):
-                AnyView(Text(error))
+                VStack {
+                    Text(error)
+                    Button("retry") {
+                        presenter.fetchComments()
+                    }
+                }
             }
         }
-        .navigationTitle(Text("Comments"))
+        .navigationTitle(Text("comments"))
         .onAppear(perform: presenter.fetchComments)
     }
 }
 
-//#if DEBUG
-//struct CommentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CommentView(comments: [])
-//    }
-//}
-//#endif
+#if DEBUG
+struct CommentView_Previews: PreviewProvider {
+    static var previews: some View {
+        let store = CommentStore()
+
+        CommentView(presenter: CommentPresenter(postId: 1, repository: FakeCommentRepository(), delegate: store), store: store)
+    }
+}
+#endif

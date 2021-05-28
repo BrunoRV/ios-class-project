@@ -24,6 +24,7 @@
 		7216735C265F292B001653EA /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216735B265F292B001653EA /* PostPresenter.swift */; };
 		7216735E265FAD49001653EA /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216735D265FAD49001653EA /* CommentCell.swift */; };
 		72167360265FAD5A001653EA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216735F265FAD5A001653EA /* PostCell.swift */; };
+		72167368266092F9001653EA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7216736A266092F9001653EA /* Localizable.strings */; };
 		CF0CCBEB7093EA96F8DF0629 /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340F2E5E9107EA484331E9DF /* Pods_RogaLabsTechCase_RogaLabsTechCaseUITests.framework */; };
 		DBCFC9C6CF40A6E23600ED8C /* Pods_RogaLabsTechCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F6F590777E3034BF2E80D2 /* Pods_RogaLabsTechCase.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,8 @@
 		7216735B265F292B001653EA /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
 		7216735D265FAD49001653EA /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		7216735F265FAD5A001653EA /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		72167369266092F9001653EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7216736B26609300001653EA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		794F1E0ABB884F8F13F217F7 /* Pods-RogaLabsTechCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCase.release.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCase/Pods-RogaLabsTechCase.release.xcconfig"; sourceTree = "<group>"; };
 		8491DFB42B3C2E1D5F61FA68 /* Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests/Pods-RogaLabsTechCase-RogaLabsTechCaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3FC6F750C9A7CA0301FA5B7 /* Pods_RogaLabsTechCaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RogaLabsTechCaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +126,7 @@
 		7215B0ED265F13C5002025F1 = {
 			isa = PBXGroup;
 			children = (
+				7216736A266092F9001653EA /* Localizable.strings */,
 				7215B128265F1D20002025F1 /* README.md */,
 				7215B0F8265F13C5002025F1 /* RogaLabsTechCase */,
 				7215B10A265F13C9002025F1 /* RogaLabsTechCaseTests */,
@@ -338,6 +342,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 7215B0ED265F13C5002025F1;
 			productRefGroup = 7215B0F7265F13C5002025F1 /* Products */;
@@ -357,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7215B129265F1D20002025F1 /* README.md in Resources */,
+				72167368266092F9001653EA /* Localizable.strings in Resources */,
 				7215B101265F13C9002025F1 /* Preview Assets.xcassets in Resources */,
 				7215B0FE265F13C9002025F1 /* Assets.xcassets in Resources */,
 			);
@@ -530,6 +536,18 @@
 			targetProxy = 7215B113265F13C9002025F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7216736A266092F9001653EA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72167369266092F9001653EA /* en */,
+				7216736B26609300001653EA /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7215B119265F13C9002025F1 /* Debug */ = {

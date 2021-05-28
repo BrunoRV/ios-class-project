@@ -53,6 +53,7 @@ class PostPresenter: PostPresenterProtocol {
     }
 
     func fetchPosts() {
+        self._delegate?.renderLoading()
         _repository.fetchPostList() { [weak self] result in
             switch result {
             case .success(let posts):

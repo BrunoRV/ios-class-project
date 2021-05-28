@@ -14,7 +14,6 @@ struct PostCell: View {
         VStack(alignment: .leading) {
             Text(_post.title).bold()
             Text(_post.body)
-            Divider()
         }
     }
 

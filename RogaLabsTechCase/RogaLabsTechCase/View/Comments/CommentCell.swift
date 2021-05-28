@@ -17,7 +17,6 @@ struct CommentCell: View {
                 Text(" <\(_comment.email)>")
             }
             Text(_comment.body)
-            Divider()
         }
     }
 

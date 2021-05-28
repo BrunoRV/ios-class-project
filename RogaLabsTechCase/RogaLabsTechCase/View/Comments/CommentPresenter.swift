@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CommentPresenterProtocol: AnyObject {
-    var postId: Int {get set}
+    var postId: Int { get set }
 
     func fetchComments()
 }
@@ -44,19 +44,20 @@ extension CommentStore: CommentPresenterDelegate {
 }
 
 class CommentPresenter: CommentPresenterProtocol {
-    private var _repository: CommentRepository
+    private var _repository: CommentRepositoryProtocol
     private weak var _delegate: CommentPresenterDelegate?
     private var _comments: [CommentModel] = []
     private var _viewComments: [CommentViewModel] = []
     var postId: Int
 
-    init(postId: Int, repository: CommentRepository, delegate: CommentPresenterDelegate?) {
+    init(postId: Int, repository: CommentRepositoryProtocol, delegate: CommentPresenterDelegate?) {
         _repository = repository
         _delegate = delegate
         self.postId = postId
     }
 
     func fetchComments() {
+        self._delegate?.renderLoading()
         _repository.fetchCommentList(postId: self.postId) { [weak self] result in
             switch result {
             case .success(let comments):

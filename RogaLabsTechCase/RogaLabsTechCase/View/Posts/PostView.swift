@@ -21,20 +21,31 @@ struct PostView: View {
         NavigationView {
             switch store.state {
             case .loading:
-                AnyView(Text("Loading"))
+                Text("loading")
             case .loaded(let posts):
-                AnyView(List(posts) { post in
-                    let store = CommentStore()
-                    NavigationLink(destination: CommentView(presenter: CommentPresenter(postId: post.id, repository: CommentRepository(), delegate: store), store: store)) {
-                        PostCell(post)
+                VStack {
+                    Button("reload") {
+                        presenter.fetchPosts()
                     }
-                })
+                    List(posts) { post in
+                        let store = CommentStore()
+
+                        NavigationLink(destination: CommentView(presenter: CommentPresenter(postId: post.id, repository: CommentRepository(), delegate: store), store: store)) {
+                            PostCell(post)
+                        }
+                    }
+                }
             case .error(let error):
-                AnyView(Text(error))
+                VStack {
+                    Text(error)
+                    Button("retry") {
+                        presenter.fetchPosts()
+                    }
+                }
+            }
         }
-    }
-        .navigationTitle(Text("Posts"))
-            .onAppear(perform: presenter.fetchPosts)
+        .navigationTitle(Text("posts"))
+        .onAppear(perform: presenter.fetchPosts)
     }
 }
 
@@ -42,6 +53,7 @@ struct PostView: View {
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
         let store = PostStore()
+        
         PostView(presenter: PostPresenter(repository: FakePostRepository(), delegate: store), store: store)
     }
 }
