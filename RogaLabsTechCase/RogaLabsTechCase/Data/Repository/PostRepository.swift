@@ -25,11 +25,10 @@ class FakePostRepository: PostRepositoryProtocol {
 
 class PostRepository: PostRepositoryProtocol {
     func fetchPostList(completion: @escaping (Result<[PostModel], Error>) -> Void) {
-        AF.request("https://jsonplaceholder.typicode.com/posts").responseJSON { response in
+        AF.request("https://jsonplaceholder.typicode.com/posts").responseDecodable(of: [PostModel].self) { response in
             switch response.result {
-            case .success(let value):
-                print(value)
-                completion(.success([]))
+            case .success(let data):
+                completion(.success(data))
             case .failure(let error):
                 completion(.failure(error))
             }
