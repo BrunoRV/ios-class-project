@@ -16,7 +16,7 @@ struct CommentModel: Codable {
 }
 
 struct CommentViewModel: Identifiable {
-    var id = UUID()
+    var id: Int
     var name: String
     var email: String
     var body: String

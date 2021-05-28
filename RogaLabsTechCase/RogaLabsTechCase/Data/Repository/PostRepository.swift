@@ -14,12 +14,9 @@ protocol PostRepositoryProtocol {
 
 class FakePostRepository: PostRepositoryProtocol {
     func fetchPostList(completion: @escaping (Result<[PostModel], Error>) -> Void) {
-        completion(.success((1...100).map { PostModel(userId: $0,
-                                                      id: $0,
-                                                      title: "Placeholder Title \($0)",
-                                                      body: "Placeholder Body \($0)") }
-                            )
-                    )
+        completion(.success((1...100).map {
+            PostModel(userId: $0, id: $0, title: "Placeholder Title \($0)", body: "Placeholder Body \($0)")
+        }))
     }
 }
 

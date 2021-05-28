@@ -24,9 +24,10 @@ struct PostView: View {
                 AnyView(Text("Loading"))
             case .loaded(let posts):
                 AnyView(List(posts) { post in
-                    //                NavigationLink(destination: CommentView(comments: [])) {
-                    PostCell(post)
-                    //                }
+                    let store = CommentStore()
+                    NavigationLink(destination: CommentView(presenter: CommentPresenter(postId: post.id, repository: CommentRepository(), delegate: store), store: store)) {
+                        PostCell(post)
+                    }
                 })
             case .error(let error):
                 AnyView(Text(error))

@@ -67,7 +67,7 @@ class PostPresenter: PostPresenterProtocol {
 
     private func _mapToViewPost(_ posts: [PostModel]) -> [PostViewModel] {
         return posts.map {
-            PostViewModel(title: $0.title, body: $0.body)
+            PostViewModel(id: $0.id, title: $0.title, body: $0.body)
         }
     }
 }

@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct CommentCell: View {
-    private var _comment: CommentModel
+    private var _comment: CommentViewModel
 
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
                 Text(_comment.name).bold()
-                Text(_comment.email)
+                Text(" <\(_comment.email)>")
             }
             Text(_comment.body)
+            Divider()
         }
     }
 
-    init(_ comment: CommentModel) {
+    init(_ comment: CommentViewModel) {
         _comment = comment
     }
 }
@@ -28,7 +29,7 @@ struct CommentCell: View {
 #if DEBUG
 struct CommentCell_Previews: PreviewProvider {
     static var previews: some View {
-        CommentCell(CommentModel(postId: 1, id: 1, name: "Placeholder Name", email: "Placeholder Email", body: "Placeholder Body"))
+        CommentCell(CommentViewModel(id: 1, name: "Placeholder Name", email: "Placeholder Email", body: "Placeholder Body"))
     }
 }
 #endif

@@ -14,6 +14,7 @@ struct PostCell: View {
         VStack(alignment: .leading) {
             Text(_post.title).bold()
             Text(_post.body)
+            Divider()
         }
     }
 
@@ -25,7 +26,7 @@ struct PostCell: View {
 #if DEBUG
 struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
-        PostCell(PostViewModel(title: "Placeholder Post Title", body: "Placeholder Post Body"))
+        PostCell(PostViewModel(id: 1, title: "Placeholder Post Title", body: "Placeholder Post Body"))
     }
 }
 #endif

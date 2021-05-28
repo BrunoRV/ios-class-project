@@ -15,7 +15,7 @@ struct PostModel: Codable {
 }
 
 struct PostViewModel: Identifiable {
-    var id = UUID()
+    var id: Int
     var title: String
     var body: String
 }
